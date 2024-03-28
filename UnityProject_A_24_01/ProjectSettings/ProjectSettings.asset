@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 630e08ac76aefd84da1215fe157e2b9b
+  productGUID: db620df78c3c1d84bbbb9be5eb2a0b52
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: assdas
+  productName: wewewe
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -676,14 +676,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: assdas
+  metroPackageName: wewewe
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: assdas
+  metroApplicationDescription: wewewe
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -752,10 +752,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 05e3f11a-5419-4a99-9056-fb2798d00816
+  cloudProjectId: 380422df-99ad-4acc-a7b0-b675c931332c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: assdas
+  projectName: wewewe
   organizationId: gusgh222
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
