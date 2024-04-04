@@ -39,9 +39,20 @@ public class ExP : MonoBehaviour
     {
         if(collision != null)
         {
+            Debug.Log(collision.gameObject.tag);
             point = 0;
-            gameObject.transform.position = new Vector3(0.0f, 3.0f, 0.0f);
-            Debug.Log(collision.gameObject.name);
+            gameObject.transform.position = Vector3.zero;
+        }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "ltems")
+        {
+            point += 10;
+            Destroy(other.gameObject);
+
         }
     }
 }
+
+
