@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ExRay : MonoBehaviour
 {
     public Text UIText;
     public int Point;
+    public float checkEndTime = 30.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,13 @@ public class ExRay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        checkEndTime -= Time.deltaTime;
+
+        if (checkEndTime <= 0)
+        {
+            PlayerPrefs.SetInt("Point",Point);
+            SceneManager.LoadScene("ResultScene");
+        }
         if (Input.GetMouseButtonDown(1))
         {
             Ray cast = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -30,6 +39,7 @@ public class ExRay : MonoBehaviour
                 {
                     Destroy(hit.collider.gameObject);
                     Point += 1;
+                    if (Point >= 10) DochangeScene();
                 }
             }
             else
@@ -39,5 +49,10 @@ public class ExRay : MonoBehaviour
 
             UIText.text = Point.ToString();
         }
+    }
+
+    void DochangeScene()
+    {
+        SceneManager.LoadScene("ResultScene");
     }
 }
